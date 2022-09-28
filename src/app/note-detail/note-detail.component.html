@@ -1,0 +1,13 @@
+
+<div class="row">
+  <div class="col-xs-6" style="margin-left: 25vw; margin-top: 5vh">
+    <form [formGroup]="noteForm" class="form-group">
+      <input type="text" class="form-control" formControlName="title" placeholder="Add a title (optional)">
+      <hr>
+      <textarea class="form-control" formControlName="body" placeholder="Add some text..."></textarea>
+      <br>
+      <button class="btn btn-primary" (click)="saveNote()">Save</button>
+    </form>
+    <button class="btn btn-success" (click)="resetForm()">New Note</button>
+  </div>
+</div>

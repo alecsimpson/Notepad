@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div *ngFor="let note of notesArray; let i = index">
+      <app-note-tile [note]="note" [index]="i" (noteSelected)="selectNote(i)"></app-note-tile>
+    </div>
+  </div>
+</div>
